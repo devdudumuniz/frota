@@ -74,10 +74,6 @@ p {
     padding: 0;
 }
 
-
-
-
-
 .flexCont {
     /*Flexbox for containers*/
     display: flex;
@@ -87,7 +83,8 @@ p {
     text-align: center;
     max-height: 100vh;
 }
-.footerLogin{
+
+.footerLogin {
     position: relative;
     display: flex;
     justify-content: center;
@@ -96,7 +93,8 @@ p {
     text-align: center;
     background-color: rgba(236, 240, 5, 0.952);
 }
-.footerLogin p{
+
+.footerLogin p {
     margin: 5% auto .5% auto;
 }
 
@@ -208,9 +206,11 @@ p {
     height: 5em;
     position: relative;
 }
-.complementar{
+
+.complementar {
     height: 2em;
 }
+
 .login-box .user-box input {
     position: relative;
     width: 100%;
@@ -223,15 +223,17 @@ p {
     outline: none;
     background: transparent;
 }
+
 .labell {
     position: absolute;
     top: 2.2em;
-    left: 8px ;
+    left: 8px;
     font-size: 1.1em;
     color: #fff;
     pointer-events: none;
     transition: .5s;
 }
+
 .focused-valid {
     position: absolute;
     top: .8em;
@@ -646,9 +648,11 @@ td {
     height: 4em;
     width: 100%;
 }
+
 .iconButtom {
     color: @backbranco;
 }
+
 .botaoSecretaria {
     font-family: 'Open Sans', sans-serif;
     min-width: 140px;
@@ -657,6 +661,7 @@ td {
     margin: 1% auto;
     position: relative;
 }
+
 .mod {
     left: 25%;
     background-color: @backbranco;
@@ -665,33 +670,39 @@ td {
     position: absolute;
     width: 45%;
 }
+
 .modHeader {
     justify-content: space-between;
     display: flex;
     height: 4em;
     align-items: center;
 }
+
 .modHeader h3,
 h6 {
     text-align: center;
     width: 90%;
 }
+
 .lineForm {
     margin: 2% auto;
     border: @bor #6e71743f;
     width: 90%;
 }
+
 .formGrup {
     display: block;
     margin: 1% auto;
     width: 100%;
 }
+
 .formGrup label {
     display: block;
     font-size: 1.15em;
     margin: auto;
     width: 79%;
 }
+
 .formGrup input {
     color: #5f6469c5;
     border: @bor #999ea396;
@@ -701,6 +712,7 @@ h6 {
     margin: auto;
     width: 80%;
 }
+
 .modFooter {
     align-items: center;
     height: 5em;
@@ -708,6 +720,7 @@ h6 {
     display: flex;
     width: 100%;
 }
+
 .modFooter input[type="submit"] {
     border-radius: 5px;
     font-weight: bold;
@@ -716,29 +729,36 @@ h6 {
     height: 2.4em;
     width: 25%;
 }
+
 .esconderMod {
     display: none;
 }
-#center1,#center2{
+
+#center1,
+#center2 {
     border: @backbranco #000 !important;
     align-items: center;
     justify-content: center;
     display: flex;
 }
+
 .mb-3 {
     width: 30%;
 }
+
 .contFlexgrid {
     position: relative;
     margin: auto;
     width: 99%;
 }
+
 .flexxGrid {
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
     width: 98%;
 }
+
 .dividir h4 {
     color: @backbranco;
     text-align: center;
@@ -747,10 +767,12 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
 }
+
 .iconeCard {
     color: #e0e2e475;
     font-size: 3em;
 }
+
 .dividir {
     align-items: center;
     justify-content: center;
@@ -758,6 +780,7 @@ h6 {
     height: 40%;
     width: 100%;
 }
+
 .dividirDois {
     align-items: center;
     justify-content: center;
@@ -765,11 +788,13 @@ h6 {
     height: 58%;
     width: 100%;
 }
+
 .lineCad {
     margin: auto;
     border: 1px solid #e7e7e7e7;
     width: 95%;
 }
+
 .contForm {
     background-color: @backbranco;
     left: 20%;
@@ -781,10 +806,12 @@ h6 {
     z-index: 6;
     box-shadow: 1px 5px 10px @background;
 }
+
 .formUser {
     height: 100%;
     width: 100%;
 }
+
 .tituCard {
     align-items: center;
     height: 4em;
@@ -792,15 +819,18 @@ h6 {
     display: flex;
     width: 100%;
 }
+
 .tituCard h3 {
     width: 90%;
     text-align: center;
 }
+
 .iconClose {
     font-size: 2em;
     margin: auto;
     opacity: .5;
 }
+
 .mb-3 {
 
     margin: auto;
@@ -911,13 +941,11 @@ h6 {
 
 .modBodyG,
 .modBody {
-
     align-items: center;
-    justify-content: space-between;
-    display: flex;
     margin: auto;
     height: 80%;
     width: 95%;
+    display: flex;
 }
 
 .formGrupG,
@@ -1003,6 +1031,11 @@ h6 {
     width: 100%;
 }
 
+
+
+
+
+
 /* RESPONSIVE dos cards*/
 @media (max-width: 1600px) {
     .cards {
@@ -1027,11 +1060,22 @@ h6 {
 }
 
 /*todos os componente versão mobile*/
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .body {
-        min-height: 100%;
+        min-height: 100vh;
         width: 100%;
     }
+
+    .login-box {
+        width: 90%;
+
+    }
+    .inner-header {
+        height: 85vh;
+
+    }
+
+
 
     .menuLateral {
         background-color: @background;
@@ -1096,6 +1140,26 @@ h6 {
         font-weight: 300;
         font-family: 'Open Sans', sans-serif;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .contHeader {
         width: 52%;

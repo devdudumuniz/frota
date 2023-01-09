@@ -1,0 +1,75 @@
+@background: #00162b;
+@headerTable: #eaee05;
+@colorWarning: #e20f0f;
+@hoverFirst: #2f3c49;
+@hoverLater: #8d3838;
+@borderColor: #cccccc1e;
+@backbranco: #f4f4f4;
+@linhaCinza: #3f5061;
+@bor: 1px solid;
+
+.perfil {
+    width: 100%;
+}
+
+.headerPerfil {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.contFotoPerfil {
+    margin: auto;
+}
+
+.fotoPerfil {
+    border: 6px solid @background;
+    margin: 8% auto;
+    background-color: @background;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+.lineH {
+    margin: 2% auto;
+    width: 95%;
+    border-top: 1px solid #00162b42;
+}
+
+.bodyPerfil {
+    width: 100%;
+}
+
+.formGrupG label {
+    font-weight: 600;
+    padding-left: .5%;
+    display: block;
+}
+
+@media (max-width:800px) {
+
+    .perfil{
+        min-height: 90vh;
+    }
+    .contFotoPerfil {
+        margin: auto;
+        width: 90%;
+    }
+
+
+    .formGrupG label {
+        padding-left: 1%;
+        width: 90%;
+        margin: auto;
+    }
+
+    .fotoPerfil {
+        border: 4px solid @background;
+        height: 100px;
+        width: 100px;
+    }
+
+
+}
