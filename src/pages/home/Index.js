@@ -1,5 +1,6 @@
 import React from "react";
 import { Chart } from "react-google-charts";
+import Card from "react-bootstrap/Card";
 
 function exten() {
   //dados do gráfico Bars
@@ -40,28 +41,76 @@ function exten() {
   };
 
   return (
-    <>
+    <div
+      style={{
+        background: "#fff",
+      }}
+    >
+      {/* Titulo da pagina 1 */}
+      <Card.Body
+        style={{
+          height: "3em",
+          width: "95%",
+          margin: "2% auto 3% auto",
+          display: "flex",
+          background: "#94EC94",
+          color: "#3f5061",
+          font: "Open Sans",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Card.Title>Gráficos de Destribuição</Card.Title>
+      </Card.Body>
+      {/* Fim do titulo */}
       {/* Gráficos de barra para desempenho de mais gastos */}
-      <div id="center1">
+      <div
+        style={{
+          margin: "auto",
+        }}
+        id="center1"
+      >
         <Chart
+          style={{
+            margin: "auto",
+          }}
           chartType="Bar"
-          width="90%"
+          width="97.5%"
           height="300px"
           data={data}
           options={options}
         />
       </div>
+
       {/* Gráficos pizza para desempenho de mais gastos */}
       <div id="center2">
+        <Card.Body
+          style={{
+            height: "3em",
+            width: "95%",
+            margin: "2% auto 3% auto",
+            display: "flex",
+            background: "#94EC94",
+            color: "#3f5061",
+            font: "Open Sans",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Card.Title>Gráficos para controle de gastos</Card.Title>
+        </Card.Body>
         <Chart
+          style={{
+            margin: "auto",
+          }}
           chartType="PieChart"
           data={dataa}
           options={optionss}
           width={"100%"}
-          height={"400px"}
+          height={"300px"}
         />
       </div>
-    </>
+    </div>
   );
 }
 export default exten;

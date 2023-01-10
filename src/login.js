@@ -115,7 +115,7 @@ class Login extends Component {
       </div>
 
       <div className="footerLogin">
-      <p>© 2022 Todos os Direitos Reservados</p><p> ♥ Design By DM Tech</p>
+      <p>© 2022 Todos os Direitos Reservados</p><p> ♥ Design By <span className="nomeEmpresa">DM Tech</span></p>
       </div>
     </div>
   );
